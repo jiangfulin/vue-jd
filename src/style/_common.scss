@@ -1,0 +1,44 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4, h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  color: #333;
+  font-weight: normal;
+  _font-family: "Microsoft Yahei";
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  &:hover {
+    outline: none;
+  }
+
+}
+/*当屏幕大于670px的时候，让div不再随着其变化*/
+@media screen and (min-width: 670px){
+  .header-box{
+    width: 670px !important;
+
+  }
+  #app{
+    margin: 0 auto;
+  }
+
+}
+
+.clear{
+  zoom:1;
+}
+.clear:after{
+  content:'';
+  clear:both;
+  display:block
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}

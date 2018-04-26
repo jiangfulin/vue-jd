@@ -1,0 +1,50 @@
+//px转换成rem
+@function px2rem($px) {
+  $rem: 37.5px;
+  @return ($px/$rem)+rem;
+}
+
+//宽高
+@mixin wh($width,$height) {
+  width: $width;
+  height: $height;
+}
+
+//子元素居中
+@mixin center() {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+//定位居中
+@mixin PCenter() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+//绝对定位左边
+@mixin LAbsolute($left,$top) {
+  position: absolute;
+  left: $left;
+  top: $top;
+}
+@mixin fixed($left,$top){
+  position: fixed;
+  left:$left;
+  top:$top;
+}
+//绝对定位右边
+@mixin RAbsolute($right,$top) {
+  position: absolute;
+  right: $right;
+  top: $top;
+}
+
+// 背景图片地址和大小
+@mixin bis($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
